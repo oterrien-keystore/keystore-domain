@@ -1,7 +1,7 @@
 package com.ote.cucumber;
 
 import cucumber.api.CucumberOptions;
-import junit5.cucumber.CucumberExtension;
+import cucumber.CucumberExtension;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.TestFactory;
@@ -15,7 +15,7 @@ import java.util.stream.Stream;
         features = "src/test/resources/features",
         tags = {"~@Ignore"},
         glue = "com.ote.cucumber")
-public class CucumberTest {
+public class CucumberTestRunner {
 
     @ExtendWith(CucumberExtension.class)
     @TestFactory
