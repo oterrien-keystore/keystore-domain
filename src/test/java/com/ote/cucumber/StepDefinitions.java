@@ -48,7 +48,7 @@ public class StepDefinitions {
         secretService.create(secret);
     }
 
-    @Then("this secret is create with correct information")
+    @Then("this secret is created with correct information")
     public void secretIsCreated() throws Throwable {
         String uid = context.get("CURRENT", String.class);
         Secret secret = context.get("SECRET_" + uid, Secret.class);
